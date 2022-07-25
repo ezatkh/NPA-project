@@ -1,18 +1,18 @@
 body{
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 #header{
     height: 35px;
     margin: 10px;
-display: grid;
-grid-template-columns: 6fr 1fr;
-column-gap: 20px;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    column-gap: 20px;
 }
 #content{
     height: 100%;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
 }
 .package{
     border: 2px solid wheat;
@@ -23,11 +23,12 @@ justify-content: space-between;
 }
 h3{
     text-align: center;
-    
 }
 img{
     position: relative;
     height: 200px;
     left: 100px;
-    
+}
+button{
+    font-weight: bold;
 }
