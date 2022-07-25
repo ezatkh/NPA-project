@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>NBA</title>
+</head>
+<body>
+    <div id="header">
+        <input type="text" id="teamName" > 
+        <button id="getPost">Get poster</button>
+    </div>
+    <div id="content">
+
+    </div>
+    <script id="packageContainer" type="text/x-handlebars-template">
+        {{#each players}}
+        <div class="package">   
+            <h3> {{firstName}} {{lastName}}<h3> 
+            <h3> {{jersey}}</h3>
+            <img src="{{image}}"  onerror="altImage(this)" alt="no image">
+            <h3> {{pos}}</h3>
+            </div>
+            {{/each}}
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
